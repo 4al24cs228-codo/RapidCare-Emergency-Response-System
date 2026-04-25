@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@theme {
+  --color-background: #080808;
+  --color-glass: rgba(255, 255, 255, 0.05);
+  --color-glass-border: rgba(255, 255, 255, 0.1);
+  --color-primary: #3b82f6;
+  --color-accent: #ef4444;
+  --color-success: #10b981;
+
+  --animate-heartbeat: heartbeat 1.5s ease-in-out infinite;
+
+  @keyframes heartbeat {
+    0%, 100% { 
+      transform: scale(1); 
+      box-shadow: 0 0 20px rgba(239, 68, 68, 0.5); 
+    }
+    14% { 
+      transform: scale(1.15); 
+      box-shadow: 0 0 40px rgba(239, 68, 68, 0.8); 
+    }
+    28% { 
+      transform: scale(1); 
+      box-shadow: 0 0 20px rgba(239, 68, 68, 0.5); 
+    }
+    42% { 
+      transform: scale(1.15); 
+      box-shadow: 0 0 40px rgba(239, 68, 68, 0.8); 
+    }
+    70% { 
+      transform: scale(1); 
+      box-shadow: 0 0 20px rgba(239, 68, 68, 0.5); 
+    }
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-background text-white antialiased overflow-x-hidden;
+  }
+}
+
+@utility glass-card {
+  @apply bg-glass backdrop-blur-xl border border-glass-border rounded-2xl shadow-lg;
+}
+
+@utility glow-effect {
+  @apply transition-all duration-300;
+  &:hover {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.5);
+  }
+}
+
+@utility glow-effect-accent {
+  @apply transition-all duration-300;
+  &:hover {
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.5);
+  }
+}
