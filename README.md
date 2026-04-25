@@ -1,4 +1,6 @@
 https://github.com/4al24cs228-codo/RapidCare-Emergency-Response-System/blob/main/WhatsApp%20Image%202026-04-25%20at%209.27.28%20AM.jpeg
+
+
 🚀 Introducing RapidCare: A Smart Emergency Response System
 I’m excited to share my latest project, RapidCare—a real-time healthcare platform designed to eliminate delays in critical emergency situations.
 
